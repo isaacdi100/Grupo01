@@ -26,6 +26,10 @@ public class Ejercicio07 {
         
         System.out.print("Ingrese un número entero positivo: ");
         numero = sc.nextInt();
+        for (int i = 1; i <= 20; i++) {
+            System.out.println(numero + " x " + i + " = " + (numero * i));
+        }
+
 
     }
     
