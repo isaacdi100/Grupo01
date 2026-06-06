@@ -26,7 +26,17 @@ public class Ejercicio06 {
         System.out.println("Algoritmo que permita ingresar ventas diarias de una tienda");
         System.out.println("==============================================================");
         
-            
+        System.out.print("Ingrese una venta (0 para terminar): ");
+        venta = sc.nextDouble();
+        //While True
+        while (venta != 0) {
+
+            total = total + venta;
+            cantidad++;
+
+            System.out.print("Ingrese otra venta (0 para terminar): ");
+            venta = sc.nextDouble();
+        }    
     
     
 }
