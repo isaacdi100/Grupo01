@@ -15,12 +15,17 @@ public class Ejercicio07 {
      */
     public static void main(String[] args) {
         
-        
+        Scanner sc = new Scanner(System.in);
+
+        int numero;
+
         
         System.out.println("========================================================================================================");
         System.out.println("Algoritmo que solicite un número entero positivo y genere su tabla de multiplicar desde el 1 hasta el 20.");
         System.out.println("======================================================================================================");
         
+        
+
     }
     
 }
