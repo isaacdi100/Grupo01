@@ -27,6 +27,9 @@ public class Ejercicio03 {
         System.out.print("Ingresa una nota: ");
         nota = teclado.nextDouble();
         
+        // 2. El ciclo funciona MIENTRAS la nota sea positiva (mayor o igual a 0)
+        while (nota >= 0) {
+            
        
     }
 }
