@@ -33,4 +33,13 @@ public class Ejercicio02 {
         numero = teclado.nextInt(); // Usamos nextInt() porque son números enteros
 
         //  El ciclo "while" revisa si el número es positivo (mayor o igual a 0)
+        while (numero >= 0) {
+            
+            cantidadNumeros = cantidadNumeros + 1; // Contamos el número
+            sumaTotal = sumaTotal + numero;       // Lo sumamos al total acumulado
+            
+            // Volvemos a pedir otro número DENTRO del ciclo
+            System.out.print("Ingresa otro número: ");
+            numero = teclado.nextInt(); 
+        }
 }
