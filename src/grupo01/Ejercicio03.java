@@ -23,6 +23,10 @@ public class Ejercicio03 {
         System.out.println("=== REGISTRO CONTINUO DE NOTAS ===");
         System.out.println("Ingresa notas entre 0 y 10.");
         System.out.println("Para terminar todo el proceso, ingresa un número negativo.\n");
+          // Pedimos la primera nota
+        System.out.print("Ingresa una nota: ");
+        nota = teclado.nextDouble();
+        
        
     }
 }
