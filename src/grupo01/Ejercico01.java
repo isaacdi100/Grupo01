@@ -40,6 +40,9 @@ public class Ejercico01 {
                 System.out.println("======================================");
                 System.out.println("CONTRASEÑA CORRECTA. ¡BIENVENIDO!");
                 System.out.println("Lograste ingresar en " + intentos + " intentos.");
+                
+                 
+                return; // El 'return' rompe el ciclo por completo y termina el método
 
       
     }
