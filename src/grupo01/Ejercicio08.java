@@ -15,14 +15,18 @@ public class Ejercicio08 {
      */
     public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);  
+      //Ingresar variable
       int numero;
-
+        System.out.println("================================================");
+        System.out.println("");
+        System.out.println("=================================================");
         System.out.print("Ingrese un número: ");
         numero = sc.nextInt();
         while (numero >= 0) {
 
             System.out.print("Ingrese otro número: ");
             numero = sc.nextInt();
+            System.out.println("Se ingresó un número negativo. Fin del programa.");
         }
     }
     
