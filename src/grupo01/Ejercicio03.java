@@ -40,6 +40,15 @@ public class Ejercicio03 {
             System.out.println(); // Una línea en blanco para ordenar
             System.out.print("Ingresa la siguiente nota (o un negativo para salir): ");
             nota = teclado.nextDouble();
+        
+        }
+        
+        // 5. Si puso un negativo, el ciclo "while" se rompe y viene aquí directamente
+        System.out.println("\n------------------------------------------------");
+        System.out.println("Proceso terminado porque ingresaste un número negativo.");
+        System.out.println("------------------------------------------------");
+        
+        teclado.close();
             
        
     }
