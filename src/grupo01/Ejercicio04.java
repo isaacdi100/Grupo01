@@ -28,5 +28,10 @@ public class Ejercicio04 {
             
             System.out.print("Intento [ " + i + " de 3 ] - Ingrese su clave: ");
             String claveIngresada = teclado.nextLine();
+              
+            // Revisamos si la clave es la correcta
+            if (claveIngresada.equals(claveCorrecta)) {
+                accesoConcedido = true; // Cambiamos el switch a verdadero
+                break; 
     }
 }
