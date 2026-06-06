@@ -34,6 +34,12 @@ public class Ejercico01 {
             System.out.println("\nNOTA: Intentos ilimitados. INTENTO NUM: " + intentos);
             System.out.print("INTRODUZCA CONTRASEÑA: ");
             String contrasena = sc.nextLine(); 
+            
+            // Si la contraseña es correcta
+            if (contrasena.equals(clave)) {
+                System.out.println("======================================");
+                System.out.println("CONTRASEÑA CORRECTA. ¡BIENVENIDO!");
+                System.out.println("Lograste ingresar en " + intentos + " intentos.");
 
       
     }
