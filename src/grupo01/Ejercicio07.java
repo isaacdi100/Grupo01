@@ -24,7 +24,8 @@ public class Ejercicio07 {
         System.out.println("Algoritmo que solicite un número entero positivo y genere su tabla de multiplicar desde el 1 hasta el 20.");
         System.out.println("======================================================================================================");
         
-        
+        System.out.print("Ingrese un número entero positivo: ");
+        numero = sc.nextInt();
 
     }
     
