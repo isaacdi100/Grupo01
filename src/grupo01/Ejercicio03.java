@@ -27,8 +27,15 @@ public class Ejercicio03 {
         System.out.print("Ingresa una nota: ");
         nota = teclado.nextDouble();
         
-        // 2. El ciclo funciona MIENTRAS la nota sea positiva (mayor o igual a 0)
+        //  El ciclo funciona MIENTRAS la nota sea positiva (mayor o igual a 0)
         while (nota >= 0) {
+        
+            if (nota <= 10) {
+                System.out.println("-> ¡Nota " + nota + " registrada con exito");
+            } else {
+                // Si es positiva pero mayor a 10 (por ejemplo, 12)
+                System.out.println("-> ¡Error! " + nota + " no es válida (debe ser máximo 10). No se registró.");
+            }
             
        
     }
