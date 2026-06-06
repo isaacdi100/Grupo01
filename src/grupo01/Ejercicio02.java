@@ -25,5 +25,6 @@ public class Ejercicio02 {
         int sumaTotal = 0;       
         double promedio = 0;     
 
-        
+        System.out.println("=== CONTADOR DE NÚMEROS ===");
+        System.out.println("Ingresa números positivos. Para terminar, ingresa un número negativo.\n");
 }
