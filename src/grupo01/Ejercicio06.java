@@ -37,7 +37,10 @@ public class Ejercicio06 {
             System.out.print("Ingrese otra venta (0 para terminar): ");
             venta = sc.nextDouble();
         }    
-    
+    System.out.println("Total vendido: " + total);
+        System.out.println("Cantidad de ventas registradas: " + cantidad);
+
+        //FIN DEL PROGRAMA
     
 }
 }
