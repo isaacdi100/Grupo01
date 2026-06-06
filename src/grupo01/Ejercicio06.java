@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package grupo01;
-
+//Importar librería
 import java.util.Scanner;
 /**
  *
@@ -15,7 +15,7 @@ public class Ejercicio06 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        //Librería Scanner
         Scanner sc = new Scanner(System.in);
         // Declarar variables
         double venta;
