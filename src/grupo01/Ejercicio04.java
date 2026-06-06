@@ -33,5 +33,12 @@ public class Ejercicio04 {
             if (claveIngresada.equals(claveCorrecta)) {
                 accesoConcedido = true; // Cambiamos el switch a verdadero
                 break; 
+             } else {
+                // Si se equivocó y aún no es el último intento, le avisamos
+                if (i < 3) {
+                    System.out.println("Clave incorrecta. Intente nuevamente.\n");
+                }
+            }
+        }
     }
 }
