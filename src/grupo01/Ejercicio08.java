@@ -30,6 +30,7 @@ public class Ejercicio08 {
             System.out.print("Ingrese otro número: ");
             numero = sc.nextInt();
             System.out.println("Se ingresó un número negativo. Fin del programa.");
+            // FIN DEL PROGRAMA
         }
     }
     
