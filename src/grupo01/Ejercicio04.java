@@ -43,5 +43,10 @@ public class Ejercicio04 {
         System.out.println("\n------------------------------------------------");
         
         if (accesoConcedido == true) {
+             System.out.println("¡CLAVE CORRECTA! Bienvenido a su cuenta bancaria.");
+        } else {
+            System.out.println("¡ACCESO BLOQUEADO! Superó los 3 intentos permitidos.");
+        }
+        }
     }
 }
