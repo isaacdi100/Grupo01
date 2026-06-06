@@ -36,6 +36,10 @@ public class Ejercicio03 {
                 // Si es positiva pero mayor a 10 (por ejemplo, 12)
                 System.out.println("-> ¡Error! " + nota + " no es válida (debe ser máximo 10). No se registró.");
             }
+           
+            System.out.println(); // Una línea en blanco para ordenar
+            System.out.print("Ingresa la siguiente nota (o un negativo para salir): ");
+            nota = teclado.nextDouble();
             
        
     }
