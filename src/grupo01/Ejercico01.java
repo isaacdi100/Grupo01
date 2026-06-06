@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author HP
  */
-public class Grupo01 {
+public class Ejercico01 {
 
     /**
      * @param args the command line arguments
@@ -22,6 +22,15 @@ public class Grupo01 {
         final String clave = "1234Pozole"; // Contraseña segura
         
         int intentos = 0;
+        
+        System.out.println("");
+        System.out.println("============================");
+        System.out.print("\nADIVINAR CREDENCIALES \n");
+        System.out.println("============================");
+        
+         // Usamos while(true) para que el ciclo se repita de forma ILIMITADA
+        while (true) {
+            intentos = intentos + 1; // Sumamos un intento al contador
 
       
     }
