@@ -47,6 +47,9 @@ public class Ejercicio04 {
         } else {
             System.out.println("¡ACCESO BLOQUEADO! Superó los 3 intentos permitidos.");
         }
-        }
+        
+         System.out.println("------------------------------------------------");
+        
+        teclado.close();
     }
 }
