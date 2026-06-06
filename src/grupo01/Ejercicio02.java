@@ -46,4 +46,14 @@ public class Ejercicio02 {
             // Usamos (double) para que Java haga la división con decimales exacta
             promedio = (double) sumaTotal / cantidadNumeros;
         }
+          
+         //  Mostramos los resultados finales
+        System.out.println("\n---------------------------------");
+        System.out.println("¡Proceso terminado por número negativo!");
+        System.out.println("Cantidad de números positivos ingresados: " + cantidadNumeros);
+        System.out.println("La suma total de los números es: " + sumaTotal);
+        System.out.println("El promedio es: " + promedio);
+        System.out.println("---------------------------------");
+        teclado.close();
+}
 }
