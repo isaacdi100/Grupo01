@@ -43,6 +43,11 @@ public class Ejercico01 {
                 
                  
                 return; // El 'return' rompe el ciclo por completo y termina el método
+            } 
+            
+            // Si llega aquí, es porque la contraseña fue incorrecta
+            System.out.println("CONTRASEÑA INCORRECTA. Vuelva a intentar.");
+        }
 
       
     }
