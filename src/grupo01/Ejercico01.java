@@ -31,6 +31,9 @@ public class Ejercico01 {
          // Usamos while(true) para que el ciclo se repita de forma ILIMITADA
         while (true) {
             intentos = intentos + 1; // Sumamos un intento al contador
+            System.out.println("\nNOTA: Intentos ilimitados. INTENTO NUM: " + intentos);
+            System.out.print("INTRODUZCA CONTRASEÑA: ");
+            String contrasena = sc.nextLine(); 
 
       
     }
