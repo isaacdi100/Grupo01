@@ -27,4 +27,10 @@ public class Ejercicio02 {
 
         System.out.println("=== CONTADOR DE NÚMEROS ===");
         System.out.println("Ingresa números positivos. Para terminar, ingresa un número negativo.\n");
+        
+        //  Pedimos el PRIMER número antes de entrar al ciclo
+        System.out.print("Ingresa un número: ");
+        numero = teclado.nextInt(); // Usamos nextInt() porque son números enteros
+
+        //  El ciclo "while" revisa si el número es positivo (mayor o igual a 0)
 }
