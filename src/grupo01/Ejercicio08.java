@@ -17,9 +17,11 @@ public class Ejercicio08 {
       Scanner sc = new Scanner(System.in);  
       //Ingresar variable
       int numero;
-        System.out.println("================================================");
-        System.out.println("");
-        System.out.println("=================================================");
+      //inicio del programa
+        System.out.println("================================================================");
+        System.out.println("Algoritmo que solicite números hasta que se ingrese uno negativo");
+        System.out.println("=================================================================");
+        
         System.out.print("Ingrese un número: ");
         numero = sc.nextInt();
         while (numero >= 0) {
