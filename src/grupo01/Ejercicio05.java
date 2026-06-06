@@ -20,6 +20,8 @@ public class Ejercicio05 {
         int numero;
         int pares = 0;
         int impares = 0;
+        System.out.print("Ingrese un número (0 para terminar): ");
+        numero = sc.nextInt();
 
     }
     
