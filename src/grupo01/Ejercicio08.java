@@ -21,9 +21,10 @@ public class Ejercicio08 {
         System.out.println("================================================================");
         System.out.println("Algoritmo que solicite números hasta que se ingrese uno negativo");
         System.out.println("=================================================================");
-        
+        //Ingresar un numero
         System.out.print("Ingrese un número: ");
         numero = sc.nextInt();
+        //While True
         while (numero >= 0) {
 
             System.out.print("Ingrese otro número: ");
