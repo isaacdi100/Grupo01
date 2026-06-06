@@ -36,7 +36,20 @@ public class Ejercicio05 {
             } else {
                 impares++;
             }
-    }
-    
+            System.out.print("Ingrese otro número (0 para terminar): ");//Ingresar otro numero
+            numero = sc.nextInt();
+        }
+
+        System.out.println("Cantidad de números pares: " + pares);
+        System.out.println("Cantidad de números impares: " + impares);
+        
+        //Fin del programa
     }
 }
+
+    
+
+    
+    
+    
+
