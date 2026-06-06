@@ -21,6 +21,12 @@ public class Ejercicio04 {
         String claveCorrecta = "1234Isaac";
         boolean accesoConcedido = false; // Empieza en falso porque aún no pone la clave
         
+        System.out.println("=== CAJERO AUTOMÁTICO BANCARIO ===");
         
+      
+        for (int i = 1; i <= 3; i++) {
+            
+            System.out.print("Intento [ " + i + " de 3 ] - Ingrese su clave: ");
+            String claveIngresada = teclado.nextLine();
     }
 }
