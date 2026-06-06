@@ -42,4 +42,8 @@ public class Ejercicio02 {
             System.out.print("Ingresa otro número: ");
             numero = teclado.nextInt(); 
         }
+          if (cantidadNumeros > 0) {
+            // Usamos (double) para que Java haga la división con decimales exacta
+            promedio = (double) sumaTotal / cantidadNumeros;
+        }
 }
