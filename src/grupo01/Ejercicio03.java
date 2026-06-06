@@ -43,7 +43,7 @@ public class Ejercicio03 {
         
         }
         
-        // 5. Si puso un negativo, el ciclo "while" se rompe y viene aquí directamente
+        //  Si puso un negativo, el ciclo "while" se rompe y viene aquí directamente
         System.out.println("\n------------------------------------------------");
         System.out.println("Proceso terminado porque ingresaste un número negativo.");
         System.out.println("------------------------------------------------");
