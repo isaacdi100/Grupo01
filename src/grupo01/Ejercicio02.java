@@ -4,6 +4,8 @@
  */
 package grupo01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author HP
@@ -13,8 +15,15 @@ public class Ejercicio02 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+ public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        //  Creamos las variables que guardarán nuestros datos
+        int numero;              
+        int cantidadNumeros = 0; 
+        int sumaTotal = 0;       
+        double promedio = 0;     
+
+        
 }
