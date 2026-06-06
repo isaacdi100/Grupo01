@@ -19,6 +19,11 @@ public class Ejercicio08 {
 
         System.out.print("Ingrese un número: ");
         numero = sc.nextInt();
+        while (numero >= 0) {
+
+            System.out.print("Ingrese otro número: ");
+            numero = sc.nextInt();
+        }
     }
     
 }
