@@ -20,6 +20,10 @@ public class Ejercicio05 {
         int numero;
         int pares = 0;
         int impares = 0;
+        
+        System.out.println("====================================================================================");
+        System.out.println("PROGRAMA PARA INGRESAR NUMEROS ENTEROS E INDICAR CUALES SON NUMEROS PARES E IMPARES");
+        System.out.println("====================================================================================");
         System.out.print("Ingrese un número (0 para terminar): ");
         numero = sc.nextInt();
 
