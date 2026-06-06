@@ -16,6 +16,10 @@ public class Ejercicio05 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
+        
+        int numero;
+        int pares = 0;
+        int impares = 0;
 
     }
     
