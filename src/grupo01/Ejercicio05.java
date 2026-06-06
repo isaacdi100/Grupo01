@@ -17,16 +17,26 @@ public class Ejercicio05 {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         
+        //DECLARACION DE VARIABLES
         int numero;
         int pares = 0;
         int impares = 0;
         
+        //INICIO DEL PROGRAMA
         System.out.println("====================================================================================");
         System.out.println("PROGRAMA PARA INGRESAR NUMEROS ENTEROS E INDICAR CUALES SON NUMEROS PARES E IMPARES");
         System.out.println("====================================================================================");
         System.out.print("Ingrese un número (0 para terminar): ");
         numero = sc.nextInt();
+         
+        while (numero != 0) {
 
+            if (numero % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
+            }
     }
     
+    }
 }
