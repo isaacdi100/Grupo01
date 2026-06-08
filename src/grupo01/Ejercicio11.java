@@ -16,6 +16,8 @@ public class Ejercicio11 {
      */
     public static void main(String[]args){
         Scanner sc =new Scanner(System.in);//para leer datos
+        final int CANT_ESTUDIANTES=20;//numero de estudiantes 
+        
     }
     
 }
