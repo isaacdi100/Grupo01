@@ -33,8 +33,12 @@ public class Ejercicio14 {
         for (int i = 2; i <= 200; i += 2) {
             suma += i;
         }
+            System.out.println();
+            System.out.println("-----------------------------------------------------------");
         
         System.out.println("La suma de todos los numeros pares entre 1 y 200 es: " + suma);
+            System.out.println("-----------------------------------------------------------");
+            System.out.println("Gracias por estar en este programa");
         scanner.close();
         }
         
