@@ -22,18 +22,22 @@ public class Ejercicio10 {
         System.out.println("ingrese los numeros: ");
         //repetir 15 veses
         for(int i =1; i<= 15 ;i++){
-        System.out.println("numero "+ i +":");
-        numero = sc . nextInt();
-        //clasificar el numero ingresado
-        if(numero>0){
-            contPositivos++;
-        }else if (numero< 0){
-            contNegativos++;
-        }else{
-            contCeros++;
-        }
+            System.out.println("numero "+ i +":");
+            numero = sc . nextInt();
+            //clasificar el numero ingresado
+            if(numero>0){
+                contPositivos++;
+            }else if (numero< 0){
+                contNegativos++;
+            }else{
+                contCeros++;
+            }
     }
-        
+    //resultados
+        System.out.println("\nPositivos: "+contPositivos);
+        System.out.println("Negativos: "+contNegativos);
+        System.out.println("Ceros: "+ contCeros);
+        sc.close();
     }
     
 }
