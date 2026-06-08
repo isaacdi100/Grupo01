@@ -7,9 +7,11 @@
  *
  * @author alexa
  */
+import java.util.Scanner;
 public class Ejercicio14 {
     public class SumaPares1a200 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         int suma = 0;
         
         // Ciclo desde 2 hasta 200, solo numeros pares (paso = 2)
