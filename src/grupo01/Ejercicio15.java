@@ -66,13 +66,13 @@ public class Ejercicio15 {
         }
         else {
             
-            for (int i = 2; i <= numero / 2; i++) {
-                
-                if (numero % i == 0) {
-                    esPrimo = false;
-                    break; 
-                }
-            }
+            if (numero == 2 || numero == 3) {
+            System.out.println("Bien " + numero + " es uno de los primeros numeros primos");
+            System.out.println();
+            System.out.println(" ES PRIMO");
+            System.out.println("Numero: " + numero);
+            scanner.close();
+            return;
         }
          System.out.println();
         System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
