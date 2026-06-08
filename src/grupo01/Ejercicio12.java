@@ -16,6 +16,9 @@ public class Ejercicio12 {
      */
     public static void main(String[]args){
          Scanner sc = new Scanner(System.in); // Para leer los datos
+         final int CANTIDAD = 15; // Cantidad de calificaciones a ingresar
+         double suma = 0, promedio, calificacion;
+          int contEncima = 0; // Cuenta cuántas son mayores al promedio
     }
     
 }
