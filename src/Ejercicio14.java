@@ -17,6 +17,11 @@ public class Ejercicio14 {
         
         System.out.println("Ingrese el numero de inicio(1-200):");
         inicio = scanner.nextInt();
+        // Si innicio es menor a 1, cambia automaticamente a 1
+        if (inicio<1){
+            System.out.println("Inicio menor a 1 se cambiara a 1 ");
+            inicio = 1 ;
+        }
         
         // Ciclo desde 2 hasta 200, solo numeros pares (paso = 2)
         for (int i = 2; i <= 200; i += 2) {
