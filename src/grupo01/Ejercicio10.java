@@ -24,7 +24,15 @@ public class Ejercicio10 {
         for(int i =1; i<= 15 ;i++){
         System.out.println("numero "+ i +":");
         numero = sc . nextInt();
+        //clasificar el numero ingresado
+        if(numero>0){
+            contPositivos++;
+        }else if (numero< 0){
+            contNegativos++;
+        }else{
+            contCeros++;
         }
+    }
         
     }
     
