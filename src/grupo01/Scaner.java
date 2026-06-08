@@ -4,16 +4,16 @@
  */
 package grupo01;
 
+import java.io.InputStream;
+
 /**
  *
  * @author kerly
  */
-public class Ejercicio10 {
-     /**
-     * @param args the command line arguments
-     */
-    public static void main(String[]args){
-        Scaner sc =new Scaner(System.in);//para leer datos 
+class Scaner {
+
+    Scaner(InputStream in) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
