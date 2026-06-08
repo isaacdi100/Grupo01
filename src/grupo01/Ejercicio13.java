@@ -50,6 +50,8 @@ public class main {
         System.out.println("\nEl número MAYOR es: " + mayor);
         System.out.println("El número MENOR es: " + menor);
         
+        System.out.println("\n Gracias por usar el programa");
+        System.out.println("Fin del programa");
         scanner.close();
     }
 }
