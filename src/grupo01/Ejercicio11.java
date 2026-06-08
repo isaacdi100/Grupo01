@@ -28,6 +28,9 @@ public class Ejercicio11 {
         }
         //calcular promedio
         promedio = sumaCalificaciones /CANT_ESTUDIANTES;
+        //resultados
+        System.out.printf("el promedio general del curso es: %.2f\n" ,promedio);
+        sc.close();
     }
     
 }
