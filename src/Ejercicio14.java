@@ -13,6 +13,10 @@ public class Ejercicio14 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int suma = 0;
+        int inicio;
+        
+        System.out.println("Ingrese el numero de inicio(1-200):");
+        inicio = scanner.nextInt();
         
         // Ciclo desde 2 hasta 200, solo numeros pares (paso = 2)
         for (int i = 2; i <= 200; i += 2) {
