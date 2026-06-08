@@ -53,6 +53,18 @@ public class Ejercicio15 {
         System.out.println("Procesando...");
         // Determinar si es primo
         boolean esPrimo = true;
+        int divisor = 0;
+        
+        for (int i = 3; i <=Math.sqrt(numero); i += 2) {  // Solo odd numbers
+            if (numero % i == 0) {
+                esPrimo = false;
+                divisor = i;
+                System.out.println("Divisible por " + divisor + ", no es primo");
+                break;
+            }
+        }
+        
+        
         
         // Caso especial: 1 no es primo
         if (numero == 1) {
