@@ -13,20 +13,21 @@ public class Ejercicio13 {
 public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        double numero;
-        double mayor, menor;
+    
+        //Ingresar solo numeros enteros 
+        int numero;
+        int mayor, menor;
         
         // Solicitar el primer número para inicializar mayor y menor
         System.out.print("Ingrese el número 1: ");
-        numero = scanner.nextDouble();
+        numero = scanner.nextInt();
         mayor = numero;
         menor = numero;
         
         // Ciclo para los 9 números restantes
         for (int i = 2; i <= 10; i++) {
             System.out.print("Ingrese el número " + i + ": ");
-            numero = scanner.nextDouble();
+            numero = scanner.nextInt();
             
             // Determinar si es el mayor
             if (numero > mayor) {
