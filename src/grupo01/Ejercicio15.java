@@ -40,7 +40,7 @@ public class Ejercicio15 {
             return;
         }
          if (numero > 1000000) {
-            System.out.println(" Advertencia: Numero muy grande, puede ser lento");
+            System.out.println("  Numero muy grande, puede ser lento");
             System.out.print("Deseas continuar? (s/n): ");
             String respuesta = scanner.next();
             if (!"s".equals(respuesta.toLowerCase())) {
@@ -56,14 +56,21 @@ public class Ejercicio15 {
         
         // Caso especial: 1 no es primo
         if (numero == 1) {
-            esPrimo = false;
-        } else {
-            // Ciclo for desde 2 hasta numero/2 (optimizado)
+            System.out.println("El numero 1 NO ES PRIMO");
+            System.out.println("E1 solo tiene 1 divisor (no cumple definicion)");
+            System.out.println();
+            System.out.println(" NO ES PRIMO");
+            System.out.println("Numero: " + numero);
+            scanner.close();
+            return;
+        }
+        else {
+            
             for (int i = 2; i <= numero / 2; i++) {
-                // Si el numero es divisible por i, no es primo
+                
                 if (numero % i == 0) {
                     esPrimo = false;
-                    break; // Salir del ciclo inmediatamente
+                    break; 
                 }
             }
         }
