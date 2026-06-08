@@ -24,11 +24,27 @@ public class main {
         int mayor, menor;
         
         // Solicitar el primer número para inicializar mayor y menor
-        System.out.print("Ingrese el número 1: ");
+        System.out.print("Ingrese el número : ");
         numero = scanner.nextInt();
         mayor = numero;
         menor = numero;
+         System.out.println(" Ingrese un número entero ");
+        int numIngresos = 0;
         
+        while (numIngresos < 1) {
+            try {
+                System.out.print("¿Cuántos números desea ingresar? (1-100): ");
+                numIngresos = scanner.nextInt();
+                
+                if (numIngresos < 1 || numIngresos > 100) {
+                    System.out.println("El número debe estar entre 1 y 100.");
+                    numIngresos = 0;
+                }
+            } catch (Exception e) {
+                System.out.println(" Ingrese un número entero válido.");
+                scanner.nextLine();
+            }
+        }
         // Ciclo para los 9 números restantes
         for (int i = 2; i <= 10; i++) {
             System.out.print("Ingrese el número " + i + ": ");
