@@ -27,6 +27,14 @@ public class Ejercicio12 {
                System.out.print("Calificación " + (i+1) + ": ");
                calificaciones[i] = sc.nextDouble();
                 suma += calificaciones[i];
+                // Calcular el promedio
+            promedio = suma / CANTIDAD;
+                  // Contar cuántas son mayores al promedio
+            for (int i = 0; i < CANTIDAD; i++) {
+                if (calificaciones[i] > promedio) {
+                    contEncima++;
+                       }
+                  }
             }
            
            }
