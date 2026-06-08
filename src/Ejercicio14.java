@@ -1,0 +1,24 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author alexa
+ */
+public class Ejercicio14 {
+    public class SumaPares1a200 {
+    public static void main(String[] args) {
+        int suma = 0;
+        
+        // Ciclo desde 2 hasta 200, solo numeros pares (paso = 2)
+        for (int i = 2; i <= 200; i += 2) {
+            suma += i;
+        }
+        
+        System.out.println("La suma de todos los numeros pares entre 1 y 200 es: " + suma);
+    }
+}
+    
+}
