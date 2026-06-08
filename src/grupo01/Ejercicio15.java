@@ -85,6 +85,10 @@ public class Ejercicio15 {
             scanner.close();
             return;
         }
+             if (numero > 50000 && esPrimo) {
+            System.out.println(" Proceso lento por numero grande");
+        }
+        
          System.out.println();
         System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
         
@@ -107,5 +111,7 @@ public class Ejercicio15 {
         
         scanner.close();
     }
+    }
 }
+
 
