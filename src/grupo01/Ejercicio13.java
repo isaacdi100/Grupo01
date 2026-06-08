@@ -46,10 +46,14 @@ public class main {
                 menor = numero;
             }
         }
-        
+        System.out.println();
+        System.out.println("==============================");
         // Mostrar resultados
         System.out.println("\nEl número MAYOR es: " + mayor);
         System.out.println("El número MENOR es: " + menor);
+        
+        int diferencia = mayor - menor ;
+        System.out.println("Diferencia :" + diferencia );
         
         System.out.println("\n Gracias por usar el programa");
         System.out.println("Fin del programa");
