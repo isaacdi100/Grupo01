@@ -35,6 +35,10 @@ public class Ejercicio12 {
                     contEncima++;
                        }
                   }
+             // Mostrar resultados
+              System.out.printf("\nEl promedio es: %.2f\n", promedio);
+              System.out.println("Cantidad de calificaciones mayores al promedio: " + contEncima);
+              sc.close();
             }
            
            }
