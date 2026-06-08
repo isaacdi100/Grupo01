@@ -17,10 +17,25 @@ public class Ejercicio15 {
         // Solicitar número al usuario
         System.out.print("Ingrese un numero entero positivo: ");
         int numero = scanner.nextInt();
+        boolean inputValido = false;
+        
+        System.out.print("Ingrese un numero entero positivo: ");
+        
+        while (!inputValido) {
+            if (scanner.hasNextInt()) {
+                numero = scanner.nextInt();
+                inputValido = true;
+            } else {
+                System.out.println("Debes ingresar un numero entero");
+                System.out.print("Intenta de nuevo: ");
+                scanner.next(); 
+            }
+        }
+        
         
         // Validar que el numero sea positivo
         if (numero < 1) {
-            System.out.println("Error: El numero debe ser positivo (mayor o igual a 1)");
+            System.out.println(" El numero debe ser positivo (mayor o igual a 1)");
             scanner.close();
             return;
         }
