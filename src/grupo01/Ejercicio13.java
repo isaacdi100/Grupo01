@@ -16,6 +16,8 @@ public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n" +("=").repeat(40));
+        System.out.println("===Buscador de Mayor y Menor===");
+        System.out.println("Ingrese 10 numeross y te dire cual es el mayor y el menor");
     
         //Ingresar solo numeros enteros 
         int numero;
