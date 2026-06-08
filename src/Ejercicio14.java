@@ -35,7 +35,10 @@ public class Ejercicio14 {
         }
         
         System.out.println("La suma de todos los numeros pares entre 1 y 200 es: " + suma);
-    }
+        scanner.close();
+        }
+        
 }
     
+}
 }
