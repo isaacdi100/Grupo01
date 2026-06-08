@@ -39,7 +39,16 @@ public class Ejercicio15 {
             scanner.close();
             return;
         }
-        
+         if (numero > 1000000) {
+            System.out.println(" Advertencia: Numero muy grande, puede ser lento");
+            System.out.print("Deseas continuar? (s/n): ");
+            String respuesta = scanner.next();
+            if (!"s".equals(respuesta.toLowerCase())) {
+                System.out.println("Programa terminado.");
+                scanner.close();
+                return;
+            }
+        }
         // Determinar si es primo
         boolean esPrimo = true;
         
