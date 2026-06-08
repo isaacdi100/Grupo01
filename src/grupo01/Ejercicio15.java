@@ -74,6 +74,17 @@ public class Ejercicio15 {
             scanner.close();
             return;
         }
+            //  Validación 8: Validar que no sea par (excepto 2)
+             if (numero % 2 == 0) {
+            System.out.println("correcto" + numero + " es NUMERO PAR");
+            System.out.println(" Todos los pares (excepto 2) NO SON PRIMOS");
+            System.out.println();
+            System.out.println(" NO ES PRIMO");
+            System.out.println("Numero: " + numero);
+            System.out.println("Divisible por: 2");
+            scanner.close();
+            return;
+        }
          System.out.println();
         System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
         
