@@ -67,6 +67,9 @@ public class Ejercicio15 {
                 }
             }
         }
+         System.out.println();
+        System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+        
         
         // Mostrar resultado
         if (esPrimo) {
@@ -74,6 +77,15 @@ public class Ejercicio15 {
         } else {
             System.out.println("El numero " + numero + " NO ES PRIMO");
         }
+         System.out.print("Quieres verificar otro numero? (s/n): ");
+        String reiniciar = scanner.next();
+        
+        if ("s".equals(reiniciar.toLowerCase())) {
+            System.out.println("\n¡Reiniciando...");
+        } else {
+            System.out.println("¡Gracias por usar el verificador!");
+        }
+        
         
         scanner.close();
     }
