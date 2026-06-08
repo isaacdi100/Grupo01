@@ -27,4 +27,4 @@ public class Ejercicio09 {
             System.out.println("el factorial de "+ numero + "es: " + factorial);
         }
         }//cerramos el main
-    }
+    }//cerramos la clase
