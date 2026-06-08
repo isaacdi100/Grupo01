@@ -50,17 +50,17 @@ public class EjercicioGrupo {
         int sumaTotal = 0;       
         double promedio = 0;     
 
-        System.out.println("\n=== CONTADOR DE NÚMEROS ===");
-        System.out.println("Ingresa números positivos. Para terminar, ingresa un número negativo.\n");
+        System.out.println("\n=== CONTADOR DE NUMEROS ===");
+        System.out.println("Ingresa numeros positivos. Para terminar, ingresa un número negativo.\n");
         
-        System.out.print("Ingresa un número: ");
+        System.out.print("Ingresa un numero: ");
         numero = sc.nextInt();
 
         while (numero >= 0) {
             cantidadNumeros = cantidadNumeros + 1;
             sumaTotal = sumaTotal + numero;       
             
-            System.out.print("Ingresa otro número: ");
+            System.out.print("Ingresa otro numero: ");
             numero = sc.nextInt(); 
         }
         
@@ -69,9 +69,9 @@ public class EjercicioGrupo {
         }
           
         System.out.println("\n---------------------------------");
-        System.out.println("¡Proceso terminado por número negativo!");
-        System.out.println("Cantidad de números positivos ingresados: " + cantidadNumeros);
-        System.out.println("La suma total de los números es: " + sumaTotal);
+        System.out.println("¡Proceso terminado por numero negativo!");
+        System.out.println("Cantidad de numeros positivos ingresados: " + cantidadNumeros);
+        System.out.println("La suma total de los numeros es: " + sumaTotal);
         System.out.println("El promedio es: " + promedio);
         System.out.println("---------------------------------");
     }
@@ -84,16 +84,16 @@ public class EjercicioGrupo {
         
         System.out.println("\n=== REGISTRO CONTINUO DE NOTAS ===");
         System.out.println("Ingresa notas entre 0 y 10.");
-        System.out.println("Para terminar todo el proceso, ingresa un número negativo.\n");
+        System.out.println("Para terminar todo el proceso, ingresa un numero negativo.\n");
         
         System.out.print("Ingresa una nota: ");
         nota = sc.nextDouble();
         
         while (nota >= 0) {
             if (nota <= 10) {
-                System.out.println("-> ¡Nota " + nota + " registrada con éxito!");
+                System.out.println("-> ¡Nota " + nota + " registrada con exito!");
             } else {
-                System.out.println("-> ¡Error! " + nota + " no es válida (debe ser máximo 10). No se registró.");
+                System.out.println("-> ¡Error! " + nota + " no es valida (debe ser máximo 10). No se registró.");
             }
             System.out.println();
             System.out.print("Ingresa la siguiente nota (o un negativo para salir): ");
@@ -101,7 +101,7 @@ public class EjercicioGrupo {
         }
         
         System.out.println("\n------------------------------------------------");
-        System.out.println("Proceso terminado porque ingresaste un número negativo.");
+        System.out.println("Proceso terminado porque ingresaste un numero negativo.");
         System.out.println("------------------------------------------------");
     }
 
@@ -112,7 +112,7 @@ public class EjercicioGrupo {
         String claveCorrecta = "1234Isaac";
         boolean accesoConcedido = false; 
         
-        System.out.println("\n=== CAJERO AUTOMÁTICO BANCARIO ===");
+        System.out.println("\n=== CAJERO AUTOMATICO BANCARIO ===");
         
         for (int i = 1; i <= 3; i++) {
             System.out.print("Intento [ " + i + " de 3 ] - Ingrese su clave: ");
@@ -281,12 +281,12 @@ public class EjercicioGrupo {
                     System.out.println("\n¡Gracias por usar el sistema! Hasta pronto.");
                     break;
                 default:
-                    System.out.println("\n[ERROR] Opción no válida. Intente de nuevo.");
+                    System.out.println("\n[ERROR] Opción no valida. Intente de nuevo.");
             }
 
             // Una pequeña pausa visual antes de volver a pintar el menú
             if (opcion != 9) {
-                System.out.println("\nRegresando al menú principal...");
+                System.out.println("\nRegresando al menu principal...");
             }
 
         } while (opcion != 9); // El ciclo sigue vivo mientras 'opcion' NO sea 9
