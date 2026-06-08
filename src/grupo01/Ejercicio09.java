@@ -20,6 +20,7 @@ public class Ejercicio09 {
             long factorial = 1;
             System.out.println("ingrese un numero: ");
             numero = sc.nextInt();
+            //agregamos el bucle
             for (int i =1; i<= numero; i++){
                 factorial *=i;
             }
