@@ -148,7 +148,7 @@ public class EjercicioGrupo {
         System.out.println("\n====================================================================================");
         System.out.println("PROGRAMA PARA INGRESAR NUMEROS ENTEROS E INDICAR CUALES SON NUMEROS PARES E IMPARES");
         System.out.println("====================================================================================");
-        System.out.print("Ingrese un número (0 para terminar): ");
+        System.out.print("Ingrese un numero (0 para terminar): ");
         numero = sc.nextInt();
          
         while (numero != 0) {
@@ -157,12 +157,12 @@ public class EjercicioGrupo {
             } else {
                 impares++;
             }
-            System.out.print("Ingrese otro número (0 para terminar): ");
+            System.out.print("Ingrese otro numero (0 para terminar): ");
             numero = sc.nextInt();
         }
 
-        System.out.println("\nCantidad de números pares: " + pares);
-        System.out.println("Cantidad de números impares: " + impares);
+        System.out.println("\nCantidad de numeros pares: " + pares);
+        System.out.println("Cantidad de numeros impares: " + impares);
     }
 
     // ==========================================
@@ -173,7 +173,7 @@ public class EjercicioGrupo {
         double total = 0;
         int cantidad = 0;
         
-        System.out.println("\n=============================================================");
+        System.out.println("=============================================================");
         System.out.println("Algoritmo que permita ingresar ventas diarias de una tienda");
         System.out.println("==============================================================");
         
@@ -200,7 +200,7 @@ public class EjercicioGrupo {
         System.out.println("Algoritmo que solicite un numero entero positivo y genere su tabla de multiplicar desde el 1 hasta el 20.");
         System.out.println("======================================================================================================");
         
-        System.out.print("Ingrese un número entero positivo: ");
+        System.out.print("Ingrese un numero entero positivo: ");
         numero = sc.nextInt();
         for (int i = 1; i <= 20; i++) {
             System.out.println(numero + " x " + i + " = " + (numero * i));
@@ -213,17 +213,17 @@ public class EjercicioGrupo {
     public static void ejercicio08(Scanner sc) {
         int numero;
         System.out.println("\n================================================================");
-        System.out.println("Algoritmo que solicite números hasta que se ingrese uno negativo");
+        System.out.println("Algoritmo que solicite numeros hasta que se ingrese uno negativo");
         System.out.println("=================================================================");
-        
-        System.out.print("Ingrese un número: ");
+        //Ingresar un numero
+        System.out.print("Ingrese un numero: ");
         numero = sc.nextInt();
-        
+        //While True
         while (numero >= 0) {
-            System.out.print("Ingrese otro número: ");
+            System.out.print("Ingrese otro numero: ");
             numero = sc.nextInt();
         }
-        System.out.println("Se ingresó un número negativo. Fin del ejercicio.");
+        System.out.println("Se ingreso un numero negativo. Fin del ejercicio.");
     }
 
     // ==========================================
