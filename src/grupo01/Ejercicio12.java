@@ -4,10 +4,18 @@
  */
 package grupo01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author kerly
  */
 public class Ejercicio12 {
+     /**
+     * @param args the command line arguments
+     */
+    public static void main(String[]args){
+         Scanner sc = new Scanner(System.in); // Para leer los datos
+    }
     
 }
