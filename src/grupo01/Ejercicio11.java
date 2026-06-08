@@ -24,9 +24,10 @@ public class Ejercicio11 {
         for (int i = 1; i<=CANT_ESTUDIANTES; i++){
             System.out.println("calificacion del estudiante" + i +":");
             calificacion= sc.nextDouble();//Leer nota
-            sumaCalificaciones += calificacion;
+            sumaCalificaciones += calificacion;//sumar total
         }
-        
+        //calcular promedio
+        promedio = sumaCalificaciones /CANT_ESTUDIANTES;
     }
     
 }
