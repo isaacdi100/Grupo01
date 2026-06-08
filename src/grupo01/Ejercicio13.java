@@ -31,6 +31,9 @@ public class main {
         for (int i = 2; i <= 10; i++) {
             System.out.print("Ingrese el número " + i + ": ");
             numero = scanner.nextInt();
+            if(numero<0){
+                System.out.println("Ingresaste un numero negativo");
+            }
             
             // Determinar si es el mayor
             if (numero > mayor) {
