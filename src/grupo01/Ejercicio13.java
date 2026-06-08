@@ -30,11 +30,12 @@ public class main {
         // Ciclo para los 9 números restantes
         for (int i = 2; i <= 10; i++) {
             System.out.print("Ingrese el número " + i + ": ");
+            System.out.println("[" + i +"/10] Ingresar numero" );
             numero = scanner.nextInt();
             if(numero<0){
                 System.out.println("Ingresaste un numero negativo");
             }
-            
+           
             // Determinar si es el mayor
             if (numero > mayor) {
                 mayor = numero;
