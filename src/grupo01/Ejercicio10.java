@@ -20,6 +20,11 @@ public class Ejercicio10 {
         int contCeros = 0;
         int numero;
         System.out.println("ingrese los numeros: ");
+        //repetir 15 veses
+        for(int i =1; i<= 15 ;i++){
+        System.out.println("numero "+ i +":");
+        numero = sc . nextInt();
+        }
         
     }
     
