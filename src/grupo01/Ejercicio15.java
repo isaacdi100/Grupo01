@@ -49,6 +49,8 @@ public class Ejercicio15 {
                 return;
             }
         }
+        System.out.println();
+        System.out.println("Procesando...");
         // Determinar si es primo
         boolean esPrimo = true;
         
