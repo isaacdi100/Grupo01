@@ -4,6 +4,8 @@
  */
 package grupo01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author kerly
@@ -13,7 +15,15 @@ public class Ejercicio09 {
      * @param args the command line arguments
      */
     public static void main(String[]args){
-        
+        try (Scanner sc = new Scanner(System.in)) {
+            int numero;
+            long factorial = 1;
+            System.out.println("ingrese un numero: ");
+            numero = sc.nextInt();
+            for (int i =1; i<= numero; i++){
+                factorial *=i;
+            }
+            System.out.println("el factorial de "+ numero + "es: " + factorial);
+        }
+        }
     }
-    
-}
