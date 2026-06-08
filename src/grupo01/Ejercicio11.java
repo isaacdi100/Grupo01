@@ -23,7 +23,8 @@ public class Ejercicio11 {
         //repetir 20 vesespor alumno
         for (int i = 1; i<=CANT_ESTUDIANTES; i++){
             System.out.println("calificacion del estudiante" + i +":");
-            calificacion= sc.nextDouble();
+            calificacion= sc.nextDouble();//Leer nota
+            sumaCalificaciones += calificacion;
         }
         
     }
