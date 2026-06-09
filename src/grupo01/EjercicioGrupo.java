@@ -56,7 +56,7 @@ public class EjercicioGrupo {
         
         System.out.print("Ingresa un numero: ");
         numero = sc.nextInt();
-
+    //While True
         while (numero >= 0) {
             cantidadNumeros = cantidadNumeros + 1;
             sumaTotal = sumaTotal + numero;       
