@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author HP
  */
-import java.util.Scanner;
+
 
 public class EjercicioGrupo {
 
@@ -27,7 +27,7 @@ public class EjercicioGrupo {
         
         while (true) {
             intentos = intentos + 1;
-            System.out.println("\nNOTE: Intentos ilimitados. INTENTO NUM: " + intentos);
+            System.out.println("\nNOTA: Intentos ilimitados. INTENTO NUM: " + intentos);
             System.out.print("INTRODUZCA CONTRASEÑA: ");
             String contrasena = sc.next();
             
@@ -36,7 +36,7 @@ public class EjercicioGrupo {
                 System.out.println("CONTRASEÑA CORRECTA. ¡BIENVENIDO!");
                 System.out.println("Lograste ingresar en " + intentos + " intentos.");
                 System.out.println("======================================");
-                return; 
+                return;
             } 
             System.out.println("CONTRASEÑA INCORRECTA. Vuelva a intentar.");
         }
@@ -78,29 +78,26 @@ public class EjercicioGrupo {
     }
 
     // ==========================================
-    // EJERCICIO 03: REGISTRO CONTINUO DE NOTAS
+    // EJERCICIO 03: VALIDACIÓN DE NOTA ÚNICA
     // ==========================================
     public static void ejercicio03(Scanner sc) {
- 
-    
         double nota;
         
         System.out.println("\n=== VALIDACION DE NOTA UNICA ===");
         System.out.print("Ingresa una nota entre 0 y 10: ");
         nota = sc.nextDouble();
         
-        // El bucle se repite MIENTRAS la nota sea inválida (menor que 0 O mayor que 10)
         while (nota < 0 || nota > 10) {
             System.out.println("-> ¡Error! " + nota + " no es una nota valida.");
             System.out.print("Por favor, intenta de nuevo. Ingresa una nota entre 0 y 10: ");
             nota = sc.nextDouble();
         }
         
-        // Al salir del bucle, garantizamos que la nota es correcta
         System.out.println("\n------------------------------------------------");
         System.out.println("-> ¡Nota " + nota + " registrada con exito!");
         System.out.println("------------------------------------------------");
     }
+
     // ==========================================
     // EJERCICIO 04: CAJERO AUTOMÁTICO
     // ==========================================
@@ -188,9 +185,26 @@ public class EjercicioGrupo {
     }
 
     // ==========================================
-    // EJERCICIO 07: TABLA DE MULTIPLICAR
+    // EJERCICIO 07: DETENER POR NEGATIVO (Antes ejercicio 8)
     // ==========================================
     public static void ejercicio07(Scanner sc) {
+        int numero;
+        System.out.println("\n================================================================");
+        System.out.println("Algoritmo que solicite numeros hasta que se ingrese uno negativo");
+        System.out.println("=================================================================");
+        System.out.print("Ingrese un numero: ");
+        numero = sc.nextInt();
+        while (numero >= 0) {
+            System.out.print("Ingrese otro numero: ");
+            numero = sc.nextInt();
+        }
+        System.out.println("Se ingreso un numero negativo. Fin del ejercicio.");
+    }
+
+    // ==========================================
+    // EJERCICIO 08: TABLA DE MULTIPLICAR (Antes ejercicio 7)
+    // ==========================================
+    public static void ejercicio08(Scanner sc) {
         int numero;
         System.out.println("\n========================================================================================================");
         System.out.println("Algoritmo que solicite un numero entero positivo y genere su tabla de multiplicar desde el 1 hasta el 20.");
@@ -204,31 +218,12 @@ public class EjercicioGrupo {
     }
 
     // ==========================================
-    // EJERCICIO 08: DETENER POR NEGATIVO
-    // ==========================================
-    public static void ejercicio08(Scanner sc) {
-        int numero;
-        System.out.println("\n================================================================");
-        System.out.println("Algoritmo que solicite numeros hasta que se ingrese uno negativo");
-        System.out.println("=================================================================");
-        //Ingresar un numero
-        System.out.print("Ingrese un numero: ");
-        numero = sc.nextInt();
-        //While True
-        while (numero >= 0) {
-            System.out.print("Ingrese otro numero: ");
-            numero = sc.nextInt();
-        }
-        System.out.println("Se ingreso un numero negativo. Fin del ejercicio.");
-    }
-
-    // ==========================================
     // EJERCICIO 09: CALCULAR FACTORIAL
     // ==========================================
     public static void ejercicio09(Scanner sc) {
         int numero;
         long factorial = 1;
-        System.out.println("\n=== CALCULAR FACTORIAL ===");
+        System.out.println("\n=== CALCULO DE FACTORIAL ===");
         System.out.print("Ingrese un numero: ");
         numero = sc.nextInt();
         
@@ -246,7 +241,7 @@ public class EjercicioGrupo {
         int contNegativos = 0;
         int contCeros = 0;
         int numero;
-        System.out.println("\n=== CLASIFICADOR DE 15 NÚMEROS ===");
+        System.out.println("\n=== CLASIFICADOR DE 15 NUMEROS ===");
         System.out.println("Ingrese los numeros: ");
         
         for (int i = 1; i <= 15; i++) {
@@ -260,8 +255,7 @@ public class EjercicioGrupo {
                 contCeros++;
             }
         }
-        System.out.println("\nResultados:");
-        System.out.println("Positivos: " + contPositivos);
+        System.out.println("\nPositivos: " + contPositivos);
         System.out.println("Negativos: " + contNegativos);
         System.out.println("Ceros: " + contCeros);
     }
@@ -273,7 +267,7 @@ public class EjercicioGrupo {
         final int CANT_ESTUDIANTES = 20;
         double sumaCalificaciones = 0;
         double calificacion, promedio;
-        System.out.println("\n=== PROMEDIO DE 20 ESTUDIANTES ===");
+        System.out.println("\n=== PROMEDIO DE NOTAS DE CURSO ===");
         System.out.println("Ingrese las calificaciones de los estudiantes: ");
         
         for (int i = 1; i <= CANT_ESTUDIANTES; i++) {
@@ -286,71 +280,50 @@ public class EjercicioGrupo {
     }
 
     // ==========================================
-    // EJERCICIO 12: CALCULAR MAYORES AL PROMEDIO
+    // EJERCICIO 12: SECUENCIA DE FIBONACCI (N TÉRMINOS)
     // ==========================================
     public static void ejercicio12(Scanner sc) {
-        final int CANTIDAD = 15; 
-        double suma = 0, promedio;
-        int contEncima = 0; 
-        double[] calificaciones = new double[CANTIDAD];
+        System.out.println("\n=== SERIE DE FIBONACCI ===");
+        System.out.print("¿Cuántos términos desea mostrar?: ");
+        int n = sc.nextInt();
         
-        System.out.println("\n=== CALIFICACIONES MAYORES AL PROMEDIO ===");
-        System.out.println("Ingrese " + CANTIDAD + " calificaciones:");
-        
-        for (int i = 0; i < CANTIDAD; i++) {
-            System.out.print("Calificación " + (i + 1) + ": ");
-            calificaciones[i] = sc.nextDouble();
-            suma += calificaciones[i];
+        if (n <= 0) {
+            System.out.println("Por favor, ingrese un número mayor a 0.");
+            return;
         }
         
-        promedio = suma / CANTIDAD;
+        int a = 0, b = 1;
+        System.out.print("Los primeros " + n + " términos son: ");
         
-        for (int i = 0; i < CANTIDAD; i++) {
-            if (calificaciones[i] > promedio) {
-                contEncima++;
-            }
+        for (int i = 1; i <= n; i++) {
+            System.out.print(a + (i < n ? ", " : ""));
+            int siguiente = a + b;
+            a = b;
+            b = siguiente;
         }
-        System.out.printf("\nEl promedio es: %.2f\n", promedio);
-        System.out.println("Cantidad de calificaciones mayores al promedio: " + contEncima);
+        System.out.println();
     }
 
     // ==========================================
-    // EJERCICIO 13: BUSCADOR DE MAYOR Y MENOR
+    // EJERCICIO 13: BUSCADOR DE MAYOR Y MENOR (10 NÚMEROS)
     // ==========================================
     public static void ejercicio13(Scanner sc) {
         System.out.println("\n" + "=".repeat(40));
-        System.out.println("=== Buscador de Mayor y Menor ===");
-        System.out.println("Ingrese números enteros y te diré cuál es el mayor y el menor");
+        System.out.println("===Buscador de Mayor y Menor===");
+        System.out.println("Ingrese 10 numeros y te dire cual es el mayor y el menor");
         
         int numero;
         int mayor, menor;
         
-        System.out.print("Ingrese el primer número: ");
+        System.out.print("Ingrese el número 1: ");
         numero = sc.nextInt();
         mayor = numero;
         menor = numero;
         
-        int numIngresos = 0;
-        while (numIngresos < 1) {
-            try {
-                System.out.print("¿Cuántos números adicionales desea ingresar? (1-100): ");
-                numIngresos = sc.nextInt();
-                if (numIngresos < 1 || numIngresos > 100) {
-                    System.out.println("El número debe estar entre 1 y 100.");
-                    numIngresos = 0;
-                }
-            } catch (Exception e) {
-                System.out.println("Ingrese un número entero válido.");
-                sc.nextLine(); 
-            }
-        }
-        
-        for (int i = 2; i <= numIngresos + 1; i++) {
+        for (int i = 2; i <= 10; i++) {
             System.out.print("Ingrese el número " + i + ": ");
             numero = sc.nextInt();
-            if (numero < 0) {
-                System.out.println("Ingresaste un numero negativo");
-            }
+            
             if (numero > mayor) {
                 mayor = numero;
             }
@@ -358,117 +331,55 @@ public class EjercicioGrupo {
                 menor = numero;
             }
         }
-        System.out.println("\n==============================");
+        System.out.println("==============================");
         System.out.println("El número MAYOR es: " + mayor);
         System.out.println("El número MENOR es: " + menor);
-        int diferencia = mayor - menor;
-        System.out.println("Diferencia: " + diferencia);
-        System.out.println("\nGracias por usar el programa. Fin del ejercicio.");
+        System.out.println("Diferencia: " + (mayor - menor));
+        System.out.println("\nGracias por usar el programa. Fin del programa");
     }
 
     // ==========================================
-    // EJERCICIO 14: SUMA DE PARES (HASTA 200)
+    // EJERCICIO 14: SUMA DE PARES COMPRENDIDOS ENTRE 1 Y 200
     // ==========================================
     public static void ejercicio14(Scanner sc) {
         int suma = 0;
-        int inicio, fin;
-        System.out.println("\n=== SUMA DE PARES ENTRE LÍMITES ===");
-        System.out.print("Ingrese el numero de inicio: ");
-        inicio = sc.nextInt();
+        System.out.println("\n=== SUMA DE NUMEROS PARES (1 A 200) ===");
         
-        if (inicio < 1) {
-            System.out.println("Inicio menor a 1, se cambiará automáticamente a 1.");
-            inicio = 1;
-        }
-        
-        System.out.print("Ingrese el numero de fin: ");
-        fin = sc.nextInt();
-        if (fin > 200) {
-            System.out.println("Fin mayor a 200, se finalizará en 200.");
-            fin = 200;
-        }
-        
-        // Ajustamos i para que empiece en el primer par válido desde 'inicio'
-        int comienzo = (inicio % 2 == 0) ? inicio : inicio + 1;
-        if (comienzo < 2) comienzo = 2;
-
-        for (int i = comienzo; i <= fin; i += 2) {
+        for (int i = 2; i <= 200; i += 2) {
             suma += i;
         }
         
         System.out.println("-----------------------------------------------------------");
-        System.out.println("La suma de todos los numeros pares en el rango es: " + suma);
+        System.out.println("La suma de todos los numeros pares entre 1 y 200 es: " + suma);
         System.out.println("-----------------------------------------------------------");
+        System.out.println("Gracias por estar en este programa");
     }
 
     // ==========================================
-    // EJERCICIO 15: VERIFICADOR DE NÚMEROS PRIMOS
+    // EJERCICIO 15: VERIFICADOR DE NÚMEROS PRIMOS (CICLO PARA)
     // ==========================================
     public static void ejercicio15(Scanner sc) {
-        int numero = 0;
-        boolean inputValido = false;
-        System.out.println("\n=== VERIFICADOR DE NÚMEROS PRIMOS ===");
+        System.out.println("\n=== VERIFICADOR DE NUMEROS PRIMOS ===");
+        System.out.print("Ingrese un numero entero: ");
+        int numero = sc.nextInt();
         
-        while (!inputValido) {
-            System.out.print("Ingrese un numero entero positivo: ");
-            if (sc.hasNextInt()) {
-                numero = sc.nextInt();
-                inputValido = true;
-            } else {
-                System.out.println("Debes ingresar un numero entero.");
-                sc.next(); 
-            }
-        }
+        int divisores = 0;
         
-        if (numero < 1) {
-            System.out.println("El numero debe ser positivo (mayor o igual a 1)");
-            return;
-        }
-        
-        if (numero > 1000000) {
-            System.out.println("Numero muy grande, puede ser lento.");
-            System.out.print("¿Deseas continuar? (s/n): ");
-            String respuesta = sc.next();
-            if (!"s".equals(respuesta.toLowerCase())) {
-                System.out.println("Programa terminado.");
-                return;
-            }
-        }
-        
-        System.out.println("\nProcesando...");
-        
-        if (numero == 1) {
-            System.out.println("El numero 1 NO ES PRIMO (Solo tiene 1 divisor).");
-            return;
-        }
-        
-        if (numero == 2 || numero == 3) {
-            System.out.println("Bien, " + numero + " es uno de los primeros numeros primos.");
-            System.out.println("ES PRIMO");
-            return;
-        }
-        
-        if (numero % 2 == 0) {
-            System.out.println(numero + " es NUMERO PAR. Todos los pares (excepto 2) NO SON PRIMOS.");
-            System.out.println("NO ES PRIMO. Divisible por: 2");
-            return;
-        }
-        
-        boolean esPrimo = true;
-        for (int i = 3; i <= Math.sqrt(numero); i += 2) { 
+        // Ciclo Para (for) para contar cuántos divisores tiene desde 1 hasta el número
+        for (int i = 1; i <= numero; i++) {
             if (numero % i == 0) {
-                esPrimo = false;
-                System.out.println("Divisible por " + i + ", no es primo.");
-                break;
+                divisores++;
             }
         }
         
         System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        if (esPrimo) {
+        // Un número es primo si únicamente tiene 2 divisores (el 1 y él mismo)
+        if (divisores == 2) {
             System.out.println("El numero " + numero + " ES PRIMO");
         } else {
             System.out.println("El numero " + numero + " NO ES PRIMO");
         }
+        System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
     }
 
     // ==========================================
@@ -480,7 +391,7 @@ public class EjercicioGrupo {
 
         do {
             System.out.println("\n=========================================");
-            System.out.println("         MENU PRINCIPAL DE OPCIONES      ");
+            System.out.println("         MENU PRINCIPAL DE OPCIONES     ");
             System.out.println("=========================================");
             System.out.println("1. Adivinar Credenciales (Ilimitado)");
             System.out.println("2. Contador, Suma y Promedio");
@@ -488,15 +399,15 @@ public class EjercicioGrupo {
             System.out.println("4. Cajero Automático (3 Intentos)");
             System.out.println("5. Números Pares e Impares");
             System.out.println("6. Ventas Diarias de Tienda");
-            System.out.println("7. Tabla de Multiplicar (1 al 20)");
-            System.out.println("8. Solicitar números hasta un Negativo");
+            System.out.println("7. Solicitar números hasta un Negativo");
+            System.out.println("8. Tabla de Multiplicar (1 al 20)");
             System.out.println("9. Calcular Factorial de un Número");
-            System.out.println("10. Clasificar 15 Números (Pos, Neg, Ceros)");
-            System.out.println("11. Promedio General de 20 Estudiantes");
-            System.out.println("12. Calificaciones Mayores al Promedio (15 alumnos)");
-            System.out.println("13. Buscador de Mayor y Menor");
-            System.out.println("14. Suma de Números Pares (Límites)");
-            System.out.println("15. Verificador de Números Primos");
+            System.out.println("10. Contador de Positivos, Negativos y Ceros");
+            System.out.println("11. Promedio General de 20 Calificaciones");
+            System.out.println("12. Serie de Fibonacci (N Términos)");
+            System.out.println("13. Buscador de Mayor y Menor (10 Números)");
+            System.out.println("14. Suma de Números Pares de 1 a 200");
+            System.out.println("15. Verificador de Números Primos (Ciclo Para)");
             System.out.println("16. SALIR DEL PROGRAMA");
             System.out.print("Elija una opción (1-16): ");
             
