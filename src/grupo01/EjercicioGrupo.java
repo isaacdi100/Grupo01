@@ -78,7 +78,7 @@ public class EjercicioGrupo {
     }
 
     // ==========================================
-    // EJERCICIO 03: VALIDACIÓN DE NOTA ÚNICA
+    // EJERCICIO 03: VALIDACION DE NOTA UNICA
     // ==========================================
     public static void ejercicio03(Scanner sc) {
         double nota;
@@ -99,7 +99,7 @@ public class EjercicioGrupo {
     }
 
     // ==========================================
-    // EJERCICIO 04: CAJERO AUTOMÁTICO
+    // EJERCICIO 04: CAJERO AUTOMATICO
     // ==========================================
     public static void ejercicio04(Scanner sc) {
         String claveCorrecta = "1234Pozole";
@@ -234,7 +234,7 @@ public class EjercicioGrupo {
     }
 
     // ==========================================
-    // EJERCICIO 10: CLASIFICAR 15 NÚMEROS
+    // EJERCICIO 10: CLASIFICAR 15 NUMEROS
     // ==========================================
     public static void ejercicio10(Scanner sc) {
         int contPositivos = 0;
@@ -280,7 +280,7 @@ public class EjercicioGrupo {
     }
 
     // ==========================================
-    // EJERCICIO 12: SECUENCIA DE FIBONACCI (N TÉRMINOS)
+    // EJERCICIO 12: SECUENCIA DE FIBONACCI (N TERMINOS)
     // ==========================================
     public static void ejercicio12(Scanner sc) {
         System.out.println("\n=== SERIE DE FIBONACCI ===");
@@ -305,7 +305,7 @@ public class EjercicioGrupo {
     }
 
     // ==========================================
-    // EJERCICIO 13: BUSCADOR DE MAYOR Y MENOR (10 NÚMEROS)
+    // EJERCICIO 13: BUSCADOR DE MAYOR Y MENOR (10 NUMEROS)
     // ==========================================
     public static void ejercicio13(Scanner sc) {
         System.out.println("\n" + "=".repeat(40));
