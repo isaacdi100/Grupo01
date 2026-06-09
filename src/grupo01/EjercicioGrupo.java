@@ -56,7 +56,7 @@ public class EjercicioGrupo {
         
         System.out.print("Ingresa un numero: ");
         numero = sc.nextInt();
-
+    //While True
         while (numero >= 0) {
             cantidadNumeros = cantidadNumeros + 1;
             sumaTotal = sumaTotal + numero;       
@@ -407,7 +407,7 @@ public class EjercicioGrupo {
             System.out.println("14. Suma de Numeros Pares de 1 a 200");
             System.out.println("15. Verificador de Numeros Primos ");
             System.out.println("16. SALIR DEL PROGRAMA");
-            System.out.print("Elija una opción (1-16): ");
+            System.out.print("Elija una opcion (1-16): ");
             
             opcion = sc.nextInt();
 
@@ -428,7 +428,7 @@ public class EjercicioGrupo {
                 case 14: ejercicio14(sc); break;
                 case 15: ejercicio15(sc); break;
                 case 16:
-                    System.out.println("\n¡Gracias por usar el sistema!");
+                    System.out.println("\nGracias por usar el sistema");
                     break;
                 default:
                     System.out.println("\nOpción no valida. Intente de nuevo.");
