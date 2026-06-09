@@ -102,7 +102,7 @@ public class EjercicioGrupo {
     // EJERCICIO 04: CAJERO AUTOMÁTICO
     // ==========================================
     public static void ejercicio04(Scanner sc) {
-        String claveCorrecta = "1234Isaac";
+        String claveCorrecta = "1234Pozole";
         boolean accesoConcedido = false; 
         
         System.out.println("\n=== CAJERO AUTOMATICO BANCARIO ===");
