@@ -33,7 +33,7 @@ public class EjercicioGrupo {
             
             if (contrasena.equals(clave)) {
                 System.out.println("======================================");
-                System.out.println("CONTRASEÑA CORRECTA. ¡BIENVENIDO!");
+                System.out.println("CONTRASEÑA CORRECTA. BIENVENIDO");
                 System.out.println("Lograste ingresar en " + intentos + " intentos.");
                 System.out.println("======================================");
                 return;
@@ -52,7 +52,7 @@ public class EjercicioGrupo {
         double promedio = 0;     
 
         System.out.println("\n=== CONTADOR DE NUMEROS ===");
-        System.out.println("Ingresa numeros positivos. Para terminar, ingresa un número negativo.\n");
+        System.out.println("Ingresa numeros positivos. Para terminar, ingresa un numero negativo.\n");
         
         System.out.print("Ingresa un numero: ");
         numero = sc.nextInt();
@@ -88,13 +88,13 @@ public class EjercicioGrupo {
         nota = sc.nextDouble();
         
         while (nota < 0 || nota > 10) {
-            System.out.println("-> ¡Error! " + nota + " no es una nota valida.");
+            System.out.println(" Error " + nota + " no es una nota valida.");
             System.out.print("Por favor, intenta de nuevo. Ingresa una nota entre 0 y 10: ");
             nota = sc.nextDouble();
         }
         
         System.out.println("\n------------------------------------------------");
-        System.out.println("-> ¡Nota " + nota + " registrada con exito!");
+        System.out.println(" Nota " + nota + " registrada con exito");
         System.out.println("------------------------------------------------");
     }
 
@@ -123,9 +123,9 @@ public class EjercicioGrupo {
         
         System.out.println("\n------------------------------------------------");
         if (accesoConcedido) {
-             System.out.println("¡CLAVE CORRECTA! Bienvenido a su cuenta bancaria.");
+             System.out.println("CLAVE CORRECTA Bienvenido a su cuenta bancaria.");
         } else {
-            System.out.println("¡ACCESO BLOQUEADO! Superó los 3 intentos permitidos.");
+            System.out.println("ACCESO BLOQUEADO Superó los 3 intentos permitidos.");
         }
         System.out.println("------------------------------------------------");
     }
