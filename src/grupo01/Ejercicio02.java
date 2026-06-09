@@ -25,14 +25,14 @@ public class Ejercicio02 {
         int sumaTotal = 0;       
         double promedio = 0;     
 
-        System.out.println("=== CONTADOR DE NÚMEROS ===");
-        System.out.println("Ingresa números positivos. Para terminar, ingresa un número negativo.\n");
+        System.out.println("=== CONTADOR DE NUMEROS ===");
+        System.out.println("Ingresa números positivos. Para terminar, ingresa un numero negativo.");
         
         //  Pedimos el PRIMER número antes de entrar al ciclo
-        System.out.print("Ingresa un número: ");
-        numero = teclado.nextInt(); // Usamos nextInt() porque son números enteros
-
-        //  El ciclo "while" revisa si el número es positivo (mayor o igual a 0)
+        System.out.print("Ingresa un numero: ");
+        numero = teclado.nextInt(); 
+        
+        
         while (numero >= 0) {
             
             cantidadNumeros = cantidadNumeros + 1; // Contamos el número
@@ -49,9 +49,9 @@ public class Ejercicio02 {
           
          //  Mostramos los resultados finales
         System.out.println("\n---------------------------------");
-        System.out.println("¡Proceso terminado por número negativo!");
-        System.out.println("Cantidad de números positivos ingresados: " + cantidadNumeros);
-        System.out.println("La suma total de los números es: " + sumaTotal);
+        System.out.println("¡Proceso terminado por numero negativo!");
+        System.out.println("Cantidad de numeros positivos ingresados: " + cantidadNumeros);
+        System.out.println("La suma total de los numeros es: " + sumaTotal);
         System.out.println("El promedio es: " + promedio);
         System.out.println("---------------------------------");
         teclado.close();

@@ -30,6 +30,7 @@ public class Ejercicio12 {
                 // Calcular el promedio
             promedio = suma / CANTIDAD;
                   // Contar cuántas son mayores al promedio
+                  
             for (int i = 0; i < CANTIDAD; i++) {
                 if (calificaciones[i] > promedio) {
                     contEncima++;
@@ -39,7 +40,7 @@ public class Ejercicio12 {
               System.out.printf("\nEl promedio es: %.2f\n", promedio);
               System.out.println("Cantidad de calificaciones mayores al promedio: " + contEncima);
               sc.close();
-            }
+              }
            
            }
           

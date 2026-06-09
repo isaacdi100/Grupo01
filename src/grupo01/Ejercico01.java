@@ -17,21 +17,21 @@ public class Ejercico01 {
      */
     
   public static void credenciales() {
-        // Crear un algoritmo para adivinar credenciales (Intentos ilimitados)
+        // Crear un algoritmo para adivinar credenciales 
         Scanner sc = new Scanner(System.in);
-        final String clave = "1234Pozole"; // Contraseña segura
+        final String clave = "1234Pozole"; // Contraseña 
         
         int intentos = 0;
         
         System.out.println("");
         System.out.println("============================");
-        System.out.print("\nADIVINAR CREDENCIALES \n");
+        System.out.print("ADIVINAR CREDENCIALES ");
         System.out.println("============================");
         
-         // Usamos while(true) para que el ciclo se repita de forma ILIMITADA
+      
         while (true) {
             intentos = intentos + 1; // Sumamos un intento al contador
-            System.out.println("\nNOTA: Intentos ilimitados. INTENTO NUM: " + intentos);
+            System.out.println("NOTA: Intentos ilimitados. INTENTO NUM: " + intentos);
             System.out.print("INTRODUZCA CONTRASEÑA: ");
             String contrasena = sc.nextLine(); 
             
