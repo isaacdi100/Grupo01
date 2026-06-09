@@ -26,7 +26,7 @@ public class Ejercicio05 {
         System.out.println("====================================================================================");
         System.out.println("PROGRAMA PARA INGRESAR NUMEROS ENTEROS E INDICAR CUALES SON NUMEROS PARES E IMPARES");
         System.out.println("====================================================================================");
-        System.out.print("Ingrese un número (0 para terminar): ");
+        System.out.print("Ingrese un numero (0 para terminar): ");
         numero = sc.nextInt();
          
         while (numero != 0) {
@@ -36,12 +36,12 @@ public class Ejercicio05 {
             } else {
                 impares++;
             }
-            System.out.print("Ingrese otro número (0 para terminar): ");//Ingresar otro numero
+            System.out.print("Ingrese otro numero (0 para terminar): ");//Ingresar otro numero
             numero = sc.nextInt();
         }
 
-        System.out.println("Cantidad de números pares: " + pares);
-        System.out.println("Cantidad de números impares: " + impares);
+        System.out.println("Cantidad de numeros pares: " + pares);
+        System.out.println("Cantidad de numeros impares: " + impares);
         
         //Fin del programa
     }
